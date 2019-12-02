@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const app = express();
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs")
 app.use(express.static(path.join(__dirname, 'public')));
 
 const storage = multer.diskStorage({
